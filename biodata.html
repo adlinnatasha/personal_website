@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BIODATA</title>
+
+	<style>
+		body
+        {
+	        background-image: url('image.website/background_homepage2.jpg');
+        }
+        h2
+        {
+	        font-family: cursive;
+        }
+        .biodata
+        {
+        	width: 100%;
+        	padding: 100px 0px;
+        	background-color: ;
+        }
+        .biodata img 
+        {
+        	height: auto;
+        	width: 300px;
+        }
+        .biodata-text
+        {
+        	width: 550px;
+
+        }
+        .about
+        {
+        	width: 1130px;
+        	max-width: 95%;
+        	margin: 0 auto;
+        	display: flex;
+        	align-items: center;
+        	justify-content: space-around;
+        }
+        .biodata-text h1
+        {
+        	color: rosybrown;
+        	font-family: monospace;
+        	font-size: 75px;
+        	text-transform: capitalize;
+        	margin-bottom: 20px;
+        }
+        span
+        {
+        	text-shadow: indianred 5px 10px 30px;
+        }
+        a:link, a:visited
+		{
+			color: whitesmoke;
+			background-color: indianred;
+			text-decoration: none;
+			text-align: center;
+			padding: 13px 30px;
+			display: inline-block;
+			border-radius: 30px;
+		}
+		a:hover, a:active
+		{
+			color: lightcoral;
+			background-color: lightpink;
+		}
+		#more 
+		{
+			display: none;
+		}
+    </style>
+
+</head>
+<body>
+
+	<h1></h1>
+
+	<header style="text-align: center;">
+	<hr style="height: 1px; color: black; background-color: black; border-width: 0;">
+	<h2>BIODATA</h2>
+	<hr style="height: 1px; color: black; background-color: black; border-width: 0;">
+    </header>
+
+    <section class="biodata">
+    <div class="about">
+    	<img src="image.website/picture8.jpg">
+    	<div class="biodata-text">
+    		<h1><span>About Me</span></h1>
+
+    <p>Hi my name is Nuradlin Natasha Binti Katimin, and I am 20 years old and was born on 9 December 2023. I am a degree student in UiTM cawangan Kelantan kampus Kota Bharu.<span id="dots">...</span><span id="more"> I am currently at 3rd semester in Bachelor of Business Administration (Hons) Business Economic (BA250).I am originally from Batu Pahat, Johor. My parent gave me such a beautiful name but everyone calls me with different name. My surname is Natasha but all my friends call me Adlin.</span></p>
+
+    <button onclick="myBiodata()" id="myContent">Read more</button>
+
+    <script>
+    function myBiodata() 
+    {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myContent");
+
+    if (dots.style.display === "none") 
+    {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+    } 
+    else 
+    {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+    }
+    }
+    </script>
+
+    <h2></h2>
+    <footer>
+    	<a href="index.html" class="btn"> Back</a>
+    	<a href="experience.html" class="btn"> Next Page</a>
+    </footer>
+
+</body>
+</html>
